@@ -53,6 +53,16 @@
     _testBtn.layer.rasterizationScale = [UIScreen mainScreen].scale;
     [self.view addSubview:_testBtn];
     [_testBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *sendBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    sendBtn.frame = CGRectMake(WIDTH-80, 150, 50, 50);
+    sendBtn.backgroundColor = [UIColor blueColor];
+    sendBtn.layer.cornerRadius = 25;
+    sendBtn.layer.shouldRasterize = YES;
+    sendBtn.layer.rasterizationScale = [UIScreen mainScreen].scale;
+    [self.view addSubview:sendBtn];
+    [sendBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
 
