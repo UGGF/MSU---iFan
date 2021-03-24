@@ -72,8 +72,9 @@ platform :ios do
    )
 
    puts "开始上传蒲公英"
-   # 开始上传蒲公英
-   pgyer(api_key: “#{api_key}”, user_key: “#{user_key}”)
+   pgyer(
+   api_key: "#{api_key}", user_key: "#{user_key}"
+  )
 
   end
 end
